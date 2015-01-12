@@ -17,8 +17,7 @@
 
   networking.hostName = "dain"; # Define your hostname.
   networking.hostId = "36483d55";
-  networking.wireless.enable = true;  # Enables wireless.
-  networking.wicd.enable = false;
+  networking.networkmanager.enable = true;
 
   # Select internationalisation properties.
   i18n = {
@@ -37,6 +36,8 @@
 
     # misc
     gitAndTools.gitFull
+
+    networkmanagerapplet
 
     wget
   ];
@@ -79,7 +80,7 @@
     createHome = true;
     home = "/home/badi";
     group = "users";
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "networkmanager" ];
     shell = "/run/current-system/sw/bin/zsh";
   };
 
