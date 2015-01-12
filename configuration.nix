@@ -34,6 +34,10 @@
     emacs24-nox
     vim
 
+    # web
+    chromium
+    firefox
+
     # misc
     gitAndTools.gitFull
 
@@ -44,6 +48,11 @@
 
   nixpkgs.config = {
     allowUnfree = true;
+    chromium = {
+      enableGoogleTalkPlugin = true;
+      enablePepperFlash = true;
+      enablePepperPDF = true;
+    };
   };
 
   # List services that you want to enable:
