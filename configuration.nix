@@ -75,7 +75,6 @@
 
     displayManager.kdm.enable = true;
     desktopManager = {
-      e19.enable = false;
       kde4.enable = true;
       xfce.enable = true;
     };
