@@ -60,6 +60,7 @@
     synaptics = {
       enable = true;
     };
+    videoDrivers = [ "nvidia" "nouveau" "ati" "cirrus" "intel" "vesa" "vmware" "modesetting" ];
   };
   # services.xserver.xkbOptions = "eurosign:e";
 
