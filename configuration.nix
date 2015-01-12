@@ -38,6 +38,9 @@
     chromium
     firefox
 
+    # audio
+    kde4.kmix # doesn't automaticaly get installed for kde
+
     # misc
     gitAndTools.gitFull
 
