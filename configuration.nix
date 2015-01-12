@@ -18,6 +18,7 @@
   networking.hostName = "dain"; # Define your hostname.
   networking.hostId = "36483d55";
   networking.wireless.enable = true;  # Enables wireless.
+  networking.wicd.enable = false;
 
   # Select internationalisation properties.
   i18n = {
@@ -60,13 +61,18 @@
     synaptics = {
       enable = true;
     };
-    videoDrivers = [ "nvidia" "nouveau" "ati" "cirrus" "intel" "vesa" "vmware" "modesetting" ];
+    videoDrivers = [ "nvidia" "nouveau" "vesa" "modesetting" ];
+
+    displayManager.kdm.enable = true;
+    desktopManager = {
+      e19.enable = false;
+      kde4.enable = true;
+      xfce.enable = true;
+    };
+      
+
   };
   # services.xserver.xkbOptions = "eurosign:e";
-
-  # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.kdm.enable = true;
-  services.xserver.desktopManager.kde4.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.badi= {
