@@ -70,6 +70,11 @@
     layout = "us";
     synaptics = {
       enable = true;
+      accelFactor = "0.01";
+      palmDetect = true;
+      twoFingerScroll = true;
+      buttonsMap = [ 1 3 2 ];
+      fingersMap = [ 1 3 2 ];
     };
     videoDrivers = [ "nvidia" "nouveau" "vesa" "modesetting" ];
 
