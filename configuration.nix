@@ -30,6 +30,12 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
 
+    # system tools
+    file
+    which
+    lsof
+    iotop
+
     # editors
     emacs24-nox
     vim
