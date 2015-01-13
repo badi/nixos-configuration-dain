@@ -90,7 +90,6 @@
     displayManager.kdm.enable = true;
     desktopManager = {
       kde4.enable = true;
-      xfce.enable = true;
     };
       
 
