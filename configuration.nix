@@ -19,6 +19,13 @@
   networking.hostId = "36483d55";
   networking.networkmanager.enable = true;
 
+  # rename interfaces to en0 wl0 (from enp2s0 wlp3s0)
+  services.udev.extraRules = ''
+    SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="10:9a:dd:4c:24:97", NAME="en0"
+    SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="c8:bc:c8:ec:d1:94", NAME="wl0"
+  '';
+
+
   # Select internationalisation properties.
   i18n = {
     consoleFont = "lat9w-16";
