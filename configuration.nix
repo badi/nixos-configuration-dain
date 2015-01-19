@@ -47,10 +47,6 @@
     emacs24-nox
     vim
 
-    # web
-    chromium
-    firefox
-
     # audio
     kde4.kmix # doesn't automaticaly get installed for kde
 
