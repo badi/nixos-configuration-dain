@@ -91,11 +91,15 @@
     videoDrivers = [ "nvidia" "nouveau" "vesa" "modesetting" ];
 
     displayManager.kdm.enable = true;
-    desktopManager = {
-      kde4.enable = true;
-    };
-      
+    displayManager.slim.enable = false;
 
+    desktopManager.xterm.enable = false;
+    desktopManager.kde4.enable = true;
+    desktopManager.xfce.enable = true;
+    windowManager.xmonad = {
+      enable = true;
+      enableContribAndExtras = true;
+    };
   };
   # services.xserver.xkbOptions = "eurosign:e";
 
