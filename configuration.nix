@@ -101,7 +101,6 @@
       enableContribAndExtras = true;
     };
   };
-  # services.xserver.xkbOptions = "eurosign:e";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.badi= {
