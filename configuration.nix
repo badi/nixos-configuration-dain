@@ -42,30 +42,17 @@
     which
     lsof
     iotop
+    wget
 
     # editors
     emacs24-nox
     vim
 
-    # audio
-    kde4.kmix # doesn't automaticaly get installed for kde
-
     # misc
     gitAndTools.gitFull
-
-    networkmanagerapplet
-
-    wget
   ];
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    chromium = {
-      enableGoogleTalkPlugin = true;
-      enablePepperFlash = true;
-      enablePepperPDF = true;
-    };
-  };
+  nixpkgs.config.allowUnfree = true;
 
   # List services that you want to enable:
 
