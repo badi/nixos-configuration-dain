@@ -75,7 +75,7 @@
       buttonsMap = [ 1 3 2 ];
       fingersMap = [ 1 3 2 ];
     };
-    videoDrivers = [ "nvidia" "nouveau" "vesa" "modesetting" ];
+    videoDrivers = [ "nouveau" "vesa" "modesetting" ];
 
     displayManager.kdm.enable = true;
     displayManager.slim.enable = false;
