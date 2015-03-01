@@ -9,7 +9,7 @@
     ];
 
   boot.initrd.availableKernelModules = [ "ehci_pci" "ata_piix" "firewire_ohci" "usbhid" "usb_storage" "zfs" ];
-  boot.kernelModules = [ "kvm-intel" "wl" ];
+  boot.kernelModules = [ "applesmc" "kvm-intel" "wl" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
 
   fileSystems."/" =
